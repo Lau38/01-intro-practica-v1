@@ -7,8 +7,8 @@ public class Ejercicio1 {
         int[] respuesta= new int[10];
         int aux=0;
         for(int i = numero.length -1;i>=0 ; i --){
-            respuesta[aux] = numero[i]
-                    System.out.println(numero[i]);
+            respuesta[aux] = numero[i];
+            System.out.println(numero[i]);
             aux=aux+1;
 
         }
