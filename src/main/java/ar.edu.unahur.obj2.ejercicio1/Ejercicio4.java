@@ -15,18 +15,18 @@ public class Ejercicio4 {
 
         char letra;
         letra = JOptionPane.showInputDialog("Ingrese una letra:").charAt(0);
-        ArrayList personasQueEmpiezanConLaLetra = new ArrayList<>();
+        ArrayList personasQueEmpiezanConEsaLetra = new ArrayList<>();
 
 
 
-        for (int e =0 ; e < nombreyApellido.size() ;e++){
-            if( nombreyApellido.get(e).charAt(0) == letra){
-                personasQueEmpiezanConLaLetra.add(nombreyApellido.get(e));
+        for (int e =0 ; e < nombresyApellidos.size() ;e++){
+            if( nombresyApellidos.get(e).charAt(0) == letra){
+                personasQueEmpiezanConEsaLetra.add(nombresyApellidos.get(e));
             }
 
         }
 
-        System.out.print("Los nombres que empiezan con la letra ingresada son:" +"  " +personasQueEmpiezanConEsaLetra.get() );
+        System.out.print("Los nombres que empiezan con la letra ingresada son:" +"  " +personasQueEmpiezanConEsaLetra );
     }
 
 }
