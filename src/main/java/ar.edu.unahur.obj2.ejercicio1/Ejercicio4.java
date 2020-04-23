@@ -4,29 +4,38 @@ import javax.swing.JOptionPane;
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+
 
 
 public class Ejercicio4 {
     public static void main(String[] args) {
-        List  nombresyApellidos = new ArrayList();
-        nombresyApellidos.add(JOptionPane.showInputDialog("Ingresar los nombres y apellido"));
 
+        int cantidadCompañeros;
+        cantidadCompañeros= Integer.parseInt(JOptionPane.showInputDialog("Ingresar cantidad de compañeros"));
 
-        char letra;
-        letra = JOptionPane.showInputDialog("Ingrese una letra:").charAt(0);
-        ArrayList personasQueEmpiezanConEsaLetra = new ArrayList<>();
+        List<String> nombresyApellidos = new ArrayList();
 
-
-
-        for (int e =0 ; e < nombresyApellidos.size() ;e++){
-            if( nombresyApellidos.get(e).charAt(0) == letra){
-                personasQueEmpiezanConEsaLetra.add(nombresyApellidos.get(e));
-            }
-
+        for (int e=0 ; e < cantidadCompañeros ; e++  ) {
+            nombresyApellidos.add(JOptionPane.showInputDialog("Ingresar los nombres y apellido"));
         }
 
-        System.out.print("Los nombres que empiezan con la letra ingresada son:" +"  " +personasQueEmpiezanConEsaLetra );
-    }
+
+          String letra;
+            letra = JOptionPane.showInputDialog("Ingrese una letra:");
+            List<String> personasQueEmpiezanConEsaLetra = new ArrayList<>();
+
+
+
+                for (int e = 0; e < nombresyApellidos.size(); e++) {
+                if (nombresyApellidos.get(e).charAt(0) == letra.charAt(0)) {
+                    personasQueEmpiezanConEsaLetra.add(nombresyApellidos.get(e));
+                }
+
+            }
+
+            System.out.print("Los nombres que empiezan con la letra ingresada son:" + "  " + personasQueEmpiezanConEsaLetra);
+
+
+        }
 
 }
