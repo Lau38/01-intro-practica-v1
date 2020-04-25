@@ -42,6 +42,7 @@ public class Ejercicio3 {
                 sum+=t[i];
             }
 
+
             for(int i=0;i<t.length;i++) {
                 asteriscos="";
                 for(int j=1;j<=t[i];j++){
