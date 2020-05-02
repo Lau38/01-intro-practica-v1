@@ -27,7 +27,7 @@ public class Ejercicio7 {
         System.out.println("\nLa matriz es :");
         for (int i=0; i < nroFilas ; i++){
             for (int j=0 ; j < nroColumnas ;j++){
-                System.out.print(matriz[i] [j] + "\t");
+                System.out.print(matriz[i] [j]+ "\t");
             }
             System.out.println("");
         }
